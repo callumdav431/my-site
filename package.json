@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "opennextjs-cloudflare build",
-  "preview": "opennextjs-cloudflare build && wrangler pages dev",
-  "deploy": "opennextjs-cloudflare build && wrangler pages deploy"
-}
+    "dev": "next dev",
+    "build": "opennextjs-cloudflare build",
+    "preview": "opennextjs-cloudflare build && wrangler pages dev",
+    "deploy": "opennextjs-cloudflare build && wrangler pages deploy"
   },
   "dependencies": {
     "next": "^15.5.15",
