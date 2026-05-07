@@ -6,7 +6,7 @@ export default function Experience() {
         <h1 className="fade-up" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', marginTop: '0.5rem' }}>Experience &<br />Education</h1>
         <div className="divider fade-up"></div>
         <p className="fade-up" style={{ maxWidth: '500px', marginBottom: '4rem' }}>
-          A Computing Science and Business student with hands-on exposure to enterprise sales, investment management, and client-facing environments.
+          A Computing Science and Business student with hands on exposure to enterprise sales, investment management, and client facing environments.
         </p>
 
         {/* EXPERIENCE */}
@@ -17,8 +17,8 @@ export default function Experience() {
           <div className="exp-title">Google Insight Day — Account Management</div>
           <div className="exp-company">Google</div>
           <ul className="exp-bullets">
-            <li>Shadowed a Google Account Manager to gain first-hand exposure to enterprise client engagement, solution selling, and relationship management at scale.</li>
-            <li>Explored how technical products are positioned and communicated to meet diverse business needs across industries.</li>
+            <li>Shadowed a Google Account Manager to gain first-hand exposure to enterprise client engagement, solution selling, and relationship management at a large scale.</li>
+            <li>Explored how technical products are positioned and communicated to meet diverse business needs across industries with Google solutions.</li>
           </ul>
         </div>
 
@@ -28,18 +28,18 @@ export default function Experience() {
           <div className="exp-company">Amazon Web Services (AWS)</div>
           <ul className="exp-bullets">
             <li>Visited the AWS office and spent time with an Enterprise Account Manager, learning how large-scale cloud and cybersecurity solutions are positioned and sold to business clients.</li>
-            <li>Gained insight into the enterprise sales cycle, client relationship management, and how technical products are translated into commercial value for organisations.</li>
+            <li>Gained insight into the enterprise sales cycle, client relationship management, and how technical products are translated into real, commercial value for organisations.</li>
           </ul>
         </div>
 
         <div className="exp-entry fade-up">
-          <div className="exp-meta">2024 – Present</div>
+          <div className="exp-meta">2024 – 2025</div>
           <div className="exp-title">Portfolio Developer</div>
           <div className="exp-company">Stirling Student Managed Investment Fund (SMIF)</div>
           <ul className="exp-bullets">
-            <li>Helped build the automated portfolio management system using Python, enabling daily updates including currency conversions, live cash positions, and dividend tracking.</li>
+            <li>Helped build the automated portfolio management system using Python, enabling daily updates including currency conversions, positions and dividend tracking.</li>
             <li>Contributed to scripts generating comprehensive weekly performance reports communicating insights to student fund stakeholders.</li>
-            <li>Collaborated with Committee Chairs to enable buy/sell history and translate technical outputs into actionable investment decisions.</li>
+            <li>Collaborated with the Committee Chairs to enable buy/sell history and translate technical outputs into actionable investment decisions.</li>
           </ul>
         </div>
 
@@ -48,7 +48,7 @@ export default function Experience() {
           <div className="exp-title">Investment Consulting Insight Day</div>
           <div className="exp-company">Hymans Robertson</div>
           <ul className="exp-bullets">
-            <li>Gained exposure to institutional investment strategies, pension fund management, and asset allocation approaches for high net-worth individuals and corporate clients.</li>
+            <li>Gained exposure to institutional investment strategies, pension fund management, and asset allocation approaches for high networth individuals and more corporate clients.</li>
             <li>Developed understanding of how consultants tailor complex financial solutions to meet diverse client needs, reinforcing skills in stakeholder communication and advisory thinking.</li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ export default function Experience() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
             <div>
               <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent)', marginBottom: '0.75rem' }}>Languages</div>
-              {['Java', 'Python', 'SQL (MySQL)', 'TypeScript', 'HTML', 'PHP', 'Ada', 'LaTeX'].map(s => <span key={s} className="tag">{s}</span>)}
+              {['Java', 'Python', 'SQL', 'Ocaml', 'TypeScript', 'HTML', 'PHP', 'Ada', 'LaTeX'].map(s => <span key={s} className="tag">{s}</span>)}
             </div>
             <div>
               <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent)', marginBottom: '0.75rem' }}>DevOps & Tools</div>

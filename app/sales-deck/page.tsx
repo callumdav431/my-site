@@ -5,7 +5,7 @@ export default function Home() {
     <main className="page">
       <div className="section" style={{ paddingTop: '6rem', minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <div className="fade-up">
-          <p className="section-label">Computing Science with Business · University of Stirling</p>
+          <p className="section-label">Computing Science with Business  ~  University of Stirling</p>
         </div>
         <div className="fade-up" style={{ marginTop: '1rem' }}>
           <h1>Callum<br />Davidson</h1>
@@ -13,10 +13,13 @@ export default function Home() {
         <div className="divider fade-up"></div>
         <div className="fade-up" style={{ maxWidth: '520px' }}>
           <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--muted)' }}>
-            I'm a first-year Computing Science and Business student building toward a career in tech sales and account management. I combine a technical grounding in software and data with a genuine interest in the commercial side — understanding clients, positioning products, and creating value.
+            I'm a second year Computing Science and Business student building toward a career in tech sales, account management and cybersecurity. 
+            I combine a technical grounding in software and data with a genuine interest in the commercial side — understanding clients, positioning 
+            products, and creating value.
           </p>
           <p style={{ marginTop: '1rem', fontSize: '1.05rem', lineHeight: '1.8' }}>
-            I've shadowed account managers at Google and AWS, contributed to a student-managed investment fund, and I'm actively building projects that demonstrate commercial thinking — not just technical ability.
+            I've shadowed account managers at Google and AWS, contributed to Stirling's student managed investment fund, 
+            and I'm actively building projects that demonstrate commercial thinking.
           </p>
         </div>
         <div className="fade-up" style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -58,13 +61,13 @@ export default function Home() {
           {[
             {
               title: 'SME Outreach Case Study',
-              desc: 'Reaching out to local Aberdeen businesses to understand how they use cloud and SaaS tools — and documenting the commercial insight.',
+              desc: 'Reaching out to local Scottish businesses to understand how they use cloud and SaaS tools — and documenting the commercial insight.',
               link: '/outreach',
               cta: 'Read the case study →',
             },
             {
               title: 'Mock Sales Deck',
-              desc: 'A full pitch deck built as if presenting a SaaS product to a fictional enterprise client — demonstrating the AM skill directly.',
+              desc: 'A full pitch deck built as if presenting a SaaS product to a fictional enterprise client — demonstrating the AM skills.',
               link: '/sales-deck',
               cta: 'View the deck →',
             },
