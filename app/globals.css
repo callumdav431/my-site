@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root {
   --bg: #020817;
@@ -10,6 +10,7 @@
   --accent: #2563eb;
   --accent2: #60a5fa;
   --font-display: 'Playfair Display', Georgia, serif;
+  --font-name: 'Bodoni Moda', 'Bodoni 72', 'Didot', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
 }
 
@@ -234,6 +235,15 @@ h1 {
   color: var(--text);
 }
 
+/* Home-page name — Bodoni Moda, ~30% smaller, slightly tighter */
+h1.name {
+  font-family: var(--font-name);
+  font-size: clamp(1.85rem, 4.2vw, 3.15rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
 h2 {
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 3vw, 2.2rem);
@@ -291,7 +301,6 @@ p { color: var(--muted); font-size: 0.95rem; }
     background 0.26s ease-out;
 }
 
-/* Gently swells in place — no movement, no shake */
 .bubble-card:hover {
   transform: scale(1.025);
   background: rgba(255, 255, 255, 0.055);
@@ -503,9 +512,9 @@ p { color: var(--muted); font-size: 0.95rem; }
 
 .exp-entry:hover .exp-bullets li { color: #b0bdd4; }
 [data-theme="light"] .exp-entry:hover .exp-bullets li { color: #444; }
+
 /* ── MOBILE NAV ───────────────────────────────────────────────────────── */
 
-/* Hamburger button — hidden on desktop */
 .nav-hamburger {
   display: none;
   flex-direction: column;
@@ -537,12 +546,10 @@ p { color: var(--muted); font-size: 0.95rem; }
 
 .nav-hamburger:hover .ham-line { background: var(--text); }
 
-/* Animate into X when open */
 .ham-line.open:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .ham-line.open:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .ham-line.open:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-/* Mobile slide-down drawer */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -550,7 +557,7 @@ p { color: var(--muted); font-size: 0.95rem; }
   left: 0;
   right: 0;
   z-index: 99;
-  padding-top: 4.5rem; /* clear the nav bar */
+  padding-top: 4.5rem;
   background: rgba(2, 8, 23, 0.97);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -603,19 +610,10 @@ p { color: var(--muted); font-size: 0.95rem; }
   padding-left: 0.5rem;
 }
 
-/* ── RESPONSIVE BREAKPOINT ────────────────────────────────────────────── */
-
 @media (max-width: 680px) {
-  /* Show hamburger, hide desktop links */
   .nav-hamburger { display: flex; }
   .nav-links     { display: none; }
-
-  /* Show the drawer element so transitions work */
-  .mobile-menu { display: block; }
-
-  /* Tighten nav padding on small screens */
-  nav { padding: 1rem 1.25rem; }
-
-  /* Tighten section padding */
-  .section { padding: 4rem 1.25rem; }
+  .mobile-menu   { display: block; }
+  nav            { padding: 1rem 1.25rem; }
+  .section       { padding: 4rem 1.25rem; }
 }

@@ -6,19 +6,15 @@ export default function Home() {
 
       {/* ── INTRO ─────────────────────────────────────── */}
       <div className="section" style={{
-        paddingTop: '7rem',
+        paddingTop: '6rem',
         paddingBottom: '2rem',
-        minHeight: '85vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
       }}>
         <div className="fade-up">
           <p className="section-label">Computing Science with Business  ~  University of Stirling</p>
         </div>
 
         <div className="fade-up" style={{ marginTop: '0.5rem' }}>
-          <h1>Callum<br />Davidson</h1>
+          <h1 className="name">Callum<br />Davidson</h1>
         </div>
 
         <div className="fade-up" style={{ maxWidth: '540px', marginTop: '2.5rem' }}>
