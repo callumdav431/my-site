@@ -32,6 +32,17 @@ export default function Experience() {
         <p className="section-label" style={{ marginTop: '4rem', marginBottom: '2.5rem' }}>Experience</p>
 
         <div className="exp-entry fade-up">
+          <div className="exp-meta">May 2026 – Present</div>
+          <div className="exp-title">Summer Intern</div>
+          <div className="exp-company">PrimeVia Marketing — Aberdeen (Hybrid)</div>
+          <ul className="exp-bullets">
+            <li>Building a platform combining CRM infrastructure with automated lead generation workflows.</li>
+            <li>Working across the full stack using Postgres, Next.js, Redis, and AI integrations to develop scalable internal tooling and automation systems.</li>
+            <li>Evaluated and then shipped as a SaaS solution to clients.</li>
+          </ul>
+        </div>
+
+        <div className="exp-entry fade-up">
           <div className="exp-meta">2025</div>
           <div className="exp-title">Google Insight Day — Account Management</div>
           <div className="exp-company">Google</div>
