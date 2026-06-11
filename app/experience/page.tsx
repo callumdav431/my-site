@@ -134,23 +134,21 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* ── CERTIFICATIONS — bubble cards ─────────── */}
-        <p className="section-label" style={{ marginTop: '4rem', marginBottom: '1.75rem' }}>Certifications & Awards</p>
-        <div className="grid-2 fade-up">
-          {[
-            { name: 'Career Essentials in Cybersecurity',              org: 'Microsoft',           year: '2025' },
-            { name: 'Algorithmic Trading and Stocks Essential Training', org: 'LinkedIn Learning',   year: '2025' },
-            { name: 'Finance Accelerator',                              org: 'AmplifyME',           year: '2024' },
-            { name: 'National Pool Lifeguard Qualification',            org: 'RLSS UK',             year: 'Valid until 2027' },
-            { name: 'Gold Chief Scout Award',                           org: 'The Scout Association', year: '2023' },
-          ].map((c, i) => (
-            <div key={i} className="bubble-card">
-              <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent)', marginBottom: '0.5rem' }}>{c.year}</div>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.95rem', marginBottom: '0.3rem' }}>{c.name}</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>{c.org}</div>
-            </div>
-          ))}
-        </div>
+        {/* ── CERTIFICATIONS — timeline entries ─────── */}
+        <p className="section-label" style={{ marginTop: '4rem', marginBottom: '2.5rem' }}>Certifications & Awards</p>
+        {[
+          { name: 'Career Essentials in Cybersecurity',                org: 'Microsoft',             year: '2025' },
+          { name: 'Algorithmic Trading and Stocks Essential Training', org: 'LinkedIn Learning',     year: '2025' },
+          { name: 'Finance Accelerator',                               org: 'AmplifyME',             year: '2024' },
+          { name: 'National Pool Lifeguard Qualification',             org: 'RLSS UK',               year: 'Valid until 2027' },
+          { name: 'Gold Chief Scout Award',                            org: 'The Scout Association', year: '2023' },
+        ].map((c, i) => (
+          <div key={i} className="exp-entry fade-up">
+            <div className="exp-meta">{c.year}</div>
+            <div className="exp-title">{c.name}</div>
+            <div className="exp-company" style={{ marginBottom: 0 }}>{c.org}</div>
+          </div>
+        ))}
 
       </div>
     </main>
